@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <body style="margin: 0; padding: 0; background-color: #f8f4ff;">
+    <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f8f4ff; padding: 20px; font-family: 'Inter', sans-serif;">
+      <tr>
+        <td align="center">
+          <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px; background-color: #ffffff; border: 1px solid #e6e6e6; border-radius: 10px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.04);">
+            <tr>
+              <td style="text-align: left;">
+                <h2 style="color: #ff9800; border-bottom: 2px solid #ffd180; padding-bottom: 10px; margin: 0 0 16px 0;">
+                  🎉 New on Plex: <span style="color: #222;">{title}</span>
+                </h2>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="{poster_url}" alt="Poster" width="100%" style="max-width: 180px; height: auto; border-radius: 6px; border: 1px solid #ccc; box-shadow: 0 4px 10px rgba(0,0,0,0.08); display: block; margin: 0 auto 20px auto;">
+              </td>
+            </tr>
+            <tr>
+              <td style="font-size: 15px; color: #333;">
+                <p><strong style="color: #ff9800;">Genre:</strong><br>{genres}</p>
+                <p><strong style="color: #ff9800;">Summary:</strong><br>{summary}</p>
+                <p><strong style="color: #ff9800;">Actors:</strong><br>{actors:[:10]}</p>
+
+                <p>
+                  <span style="background-color: #ff9800; color: #fff; padding: 4px 10px; border-radius: 20px; font-weight: 600; font-size: 0.9em; display: inline-block; margin-bottom: 6px;">
+                    IMDb {rating}
+                  </span><br>
+                  <strong style="color: #ff9800;">Critics:</strong> {critic_rating}<br>
+                  <strong style="color: #ff9800;">Users:</strong> {user_rating}
+                </p>
+
+                <p><strong style="color: #ff9800;">Released:</strong> {release_date}</p>
+                <p><strong style="color: #ff9800;">Quality:</strong><br>{video_resolution}p, {bitrate} kbps, {video_codec}, {audio_codec}, {audio_channels} Channels, {file_size}</p>
+
+                <p style="margin-top: 16px;">
+                  <a href="{imdb_url}" style="color: #ff9800; text-decoration: none; font-weight: 600;">View on IMDb</a> |
+                  <a href="{themoviedb_url}" style="color: #ff9800; text-decoration: none; font-weight: 600;">TMDb</a> |
+                  <a href="{thetvdb_url}" style="color: #ff9800; text-decoration: none; font-weight: 600;">TVDb</a>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="font-size: 0.9em; color: #777; border-top: 1px solid #eee; margin-top: 24px; padding-top: 12px; text-align: center;">
+                Delivered with 💛 by Plex and your snack-worthy sponsor:<br><strong>Rahul Aggarwal Sweets and Snacks</strong> 🍬
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    </style>
+  </body>
+</html>
